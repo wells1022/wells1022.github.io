@@ -1,0 +1,130 @@
+{
+  "contact": [
+    {
+      "src": "./img/resume.png",
+      "title": "Resume",
+      "url": "https://docs.google.com/document/d/1Ud5NrTc3GHl2yON8rwz-G4XFW7Gdx1KvidMPd0P-T4I/edit?usp=sharing"
+    },
+    {
+      "src": "./img/linkedin.png",
+      "title": "LinkedIn",
+      "url": "https://www.linkedin.com/in/cheng-han-yu-331763159/"
+    },
+    {
+      "src": "./img/github.png",
+      "title": "GitHub",
+      "url": "https://github.com/wells1022/"
+    },
+    {
+      "src": "./img/email.png",
+      "title": "Email",
+      "url": "mailto:wells1022@gmail.com"
+    }
+  ],
+  "experience": [
+    {
+      "id": "1",
+      "src": "./img/garmin-logo.png",
+      "title": "New Product Introduction Engineer",
+      "company": "Garmin",
+      "date": "Nov 2020 - Jun 2022",
+      "duration": "1 yr 8 mos",
+      "location": "Taoyuan, Taiwan",
+      "description": [
+        "Led design and process enhancements for 10+ in-vehicle info system products at Garmin, optimizing manufacturing efficiency and reducing failure rates.",
+        "Applied design for manufacturing principles, conducted process failure mode analysis and achieved a 15% cost reduction through strategic improvements."
+      ],
+      "skill": [
+        "Product Development",
+        "Design for Manufacturing",
+        "Process Improvement",
+        "pfmea"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "id": "1",
+      "src": "./img/programming.png",
+      "title": "Programming Languages",
+      "skill": ["Python", "Java", "JavaScript", "TypeScript", "C++"]
+    },
+    {
+      "id": "2",
+      "src": "./img/web.png",
+      "title": "Application Technologies",
+      "skill": ["React", "Next.js", "Node.js", "HTML", "CSS", "Android"]
+    },
+    {
+      "id": "3",
+      "src": "./img/cloud.png",
+      "title": "Cloud",
+      "skill": ["terraform", "AWS"]
+    },
+    {
+      "id": "4",
+      "src": "./img/database.png",
+      "title": "Database",
+      "skill": ["MySQL", "NoSQL"]
+    }
+  ],
+  "portfolio": [
+    {
+      "id": "1",
+      "src": "./img/all-on-4.png",
+      "title": "Automatic optimization analysis of prostheses for All-on-four treatments",
+      "description": [
+        "Developed an automated framework for optimizing the placement of implants of the all-on-4 treatment based on the biomechanical analysis and optimization search algorithm.",
+        "Automatically ran HyperMesh and Abaqus by using Python scripts to improve analysis efficiency."
+      ],
+      "Technologies": [
+        "Python",
+        "HyperMesh",
+        "Abaqus",
+        "Biomechanical Analysis",
+        "Optimization Algorithm",
+        "MATLAB"
+      ]
+    },
+    {
+      "id": "2",
+      "src": "./img/pet-planning.png",
+      "title": "Pet Planning: A pet care and management application",
+      "description": [
+        "Developed an Android application to help pet owners schedule and manage events for their pets such as feeding, grooming, walking, or medical appointments.",
+        "The application synchronizes the data to the Room database and Firebase to ensure efficient data management and offline access to pet-related data."
+      ],
+      "Technologies": ["Android", "Java", "HTML", "Firebase"]
+    },
+    {
+      "id": "3",
+      "src": "./img/image-tagging.png",
+      "title": "Image Taging: Serverless image storage system with tagging",
+      "description": [
+        "Developed a cloud-based online system that enables users to store and retrieve images using automatically generated tags.",
+        "The system utilizes a cloud-based solution on AWS, leveraging services like S3, Lambda, API Gateway, and DynamoDB."
+      ],
+      "Technologies": ["AWS serverless architecture", "JavaScript", "Python"]
+    },
+    {
+      "id": "4",
+      "src": "./img/asset-steward.png",
+      "title": "Asset Steward: A digital asset management system for asset",
+      "description": [
+        "Developed a digital asset management system that enables users to manage and track assets, including their location, status, and maintenance history.",
+        "The system is built on a web-based platform using React, Node.js."
+      ],
+      "Technologies": ["React", "Node.js", "HTML", "CSS"]
+    }
+  ],
+  "testimonial": [
+    {
+      "id": "1",
+      "count": "5",
+      "src": "./img/avatar-image.png",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
+      "author_name": "Dianne Russel",
+      "author_designation": "Starbucks"
+    }
+  ]
+}
