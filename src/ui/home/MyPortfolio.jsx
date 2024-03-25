@@ -33,7 +33,7 @@ export default function MyPortfolio() {
             onMouseLeave={onMouseLeave}
           >
             <div className="w-96">
-              <img src={item.src} />
+              <img alt="Project" src={item.src} />
             </div>
             <div className="w-fit">
               <h3>{item.title}</h3>
@@ -46,8 +46,10 @@ export default function MyPortfolio() {
               </ul>
               <div className="flex flex-wrap gap-5 mt-3">
                 {item.Technologies?.map((tech, index) => (
-                  <div className=
-                  "bg-white text-black px-2 py-1 rounded" key={index}>
+                  <div
+                    className="bg-white text-black px-2 py-1 rounded"
+                    key={index}
+                  >
                     {tech}
                   </div>
                 ))}

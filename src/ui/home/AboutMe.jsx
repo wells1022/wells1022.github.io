@@ -26,9 +26,10 @@ export default function AboutMe() {
               <a
                 href={item.url}
                 target="_blank"
+                rel="noreferrer"
                 className="flex flex-row gap-2 items-center "
               >
-                <img className="w-5 h-5" src={item.src} />
+                <img alt="icon" className="w-5 h-5" src={item.src} />
                 <p>{item.title}</p>
               </a>
             </div>

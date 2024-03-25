@@ -109,7 +109,7 @@
     {
       "id": "4",
       "src": "./img/asset-steward.png",
-      "title": "Asset Steward: A digital asset management system for asset",
+      "title": "Asset Steward: A digital asset management system",
       "description": [
         "Developed a digital asset management system that enables users to manage and track assets, including their location, status, and maintenance history.",
         "The system is built on a web-based platform using React, Node.js."

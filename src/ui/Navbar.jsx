@@ -1,4 +1,4 @@
-import { useState, useEffect,useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Link } from "react-scroll";
 import clsx from "clsx";
 
@@ -24,7 +24,7 @@ function Navbar() {
       if (
         navActive &&
         ref.current &&
-        !ref.current.contains(event.target)&&
+        !ref.current.contains(event.target) &&
         !document.getElementById("toggle-menu")?.contains(event.target)
       ) {
         closeMenu();
@@ -74,14 +74,17 @@ function Navbar() {
           className="flex items-center gap-3"
         >
           <img
+            alt="Wells Yu"
             className="w-12 h-11 rounded-lg"
-            src={scrollpos > 10 ? "./img/icon-white.png" : "./img/icon-dark.png"}
+            src={
+              scrollpos > 10 ? "./img/icon-white.png" : "./img/icon-dark.png"
+            }
           />
           <p
             className={clsx(
-              "text-white font-bold text-4xl font-raisley whitespace-nowrap",
+              "text-[#000] font-bold text-4xl font-raisley whitespace-nowrap",
               {
-                "text-black": scrollpos > 10,
+                "text-[#000]": scrollpos > 10,
               }
             )}
           >
@@ -89,7 +92,7 @@ function Navbar() {
           </p>
         </Link>
       </button>
-      <a
+      <div
         className="lg:hidden flex-col justify-between absolute top-6 right-6 flex z-50"
         onClick={toggleNav}
         id="toggle-menu"
@@ -120,7 +123,7 @@ function Navbar() {
             </>
           )}
         </svg>
-      </a>
+      </div>
       <ul
         className={clsx(
           "flex text-xl font-bold text-stone-950 bg-[#f5fcff] whitespace-nowrap",
@@ -132,19 +135,19 @@ function Navbar() {
         ref={ref}
       >
         {menuItems.map((link, index) => (
-            <Link
-              key={index}
-              onClick={closeMenu}
-              activeClass="text-sky-500"
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={500}
-              to={link.nav}
-              className="hover:text-sky-500"
-            >
-              <button>{link.title}</button>
-            </Link>
+          <Link
+            key={index}
+            onClick={closeMenu}
+            activeClass="text-sky-500"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+            to={link.nav}
+            className="hover:text-sky-500"
+          >
+            <button>{link.title}</button>
+          </Link>
         ))}
       </ul>
     </nav>
