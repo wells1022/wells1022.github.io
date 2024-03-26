@@ -14,11 +14,11 @@ export default function MySkills() {
 
   return (
     <section
-      className="w-full h-fit px-20 py-20 flex gap-10 flex-col bg-sky-100"
+      className="w-full h-fit px-10 xl:px-20 py-20 flex gap-10 flex-col bg-sky-100"
       id="MySkills"
     >
       <h2>My Skills</h2>
-      <div className="grid justify-center items-start gap-10 grid-cols-4">
+      <div className="grid justify-center items-start gap-10 xl:grid-cols-4 flex-col">
         {data?.skills?.map((item, index) => (
           <div
             key={index}

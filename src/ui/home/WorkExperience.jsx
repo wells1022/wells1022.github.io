@@ -3,7 +3,7 @@ import data from "../../data/index.json";
 export default function WorkExperience() {
   return (
     <section
-      className="w-full h-fit px-20 py-20 flex gap-10 flex-col"
+      className="w-full h-fit px-5 xl:px-20 py-20 flex gap-10 flex-col"
       id="WorkExperience"
     >
       <h2>Work Experience</h2>
@@ -32,7 +32,7 @@ export default function WorkExperience() {
                 <div className="h-full pt-6 w-0.5 bg-sky-700"></div>
               </div>
               <div>
-                <div className="flex gap-10">
+                <div className="flex xl:gap-10">
                   <div>
                     <h3 className="pb-2">{item.title}</h3>
                     <h4>{item.company}</h4>
@@ -45,7 +45,7 @@ export default function WorkExperience() {
                     />
                   </div>
                 </div>
-                <div className="flex gap-20 text-sky-700">
+                <div className="flex gap-5 xl:gap-20 text-sky-700">
                   <div className="flex gap-1">
                     <svg
                       className="h-5 w-5"
@@ -110,7 +110,7 @@ export default function WorkExperience() {
                   </svg>
                   <h5>{item.location}</h5>
                 </div>
-                <ul className="pt-5 pl-5 pr-40 list-disc">
+                <ul className="pt-5 pl-5 xl:pr-40 list-disc">
                   {item.description.map((item, index) => (
                     <li className="pb-2" key={index}>
                       {item}

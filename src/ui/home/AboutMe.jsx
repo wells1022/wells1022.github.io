@@ -4,7 +4,7 @@ export default function AboutMe() {
   return (
     <section
       id="AboutMe"
-      className="w-full h-fit px-20 py-20 flex gap-10 lg:gap-40 flex-col lg:flex-row bg-sky-100"
+      className="w-full h-fit px-5 xl:px-20 py-20 flex gap-10 lg:gap-40 flex-col lg:flex-row bg-sky-100"
     >
       <div className="align-middle flex justify-center items-center">
         <img className="w-fit h-fit" src="./img/about-me.png" alt="About Me" />
@@ -20,7 +20,7 @@ export default function AboutMe() {
           certification, showcasing my commitment to advancing my skills.
         </p>
 
-        <div className="flex flex-row gap-10 justify-center py-5 text-sky-700">
+        <div className="flex flex-col xl:flex-row xl:gap-10 justify-center py-5 text-sky-700">
           {data?.contact?.map((item, index) => (
             <div key={index}>
               <a
