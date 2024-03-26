@@ -1,6 +1,5 @@
 import { useState } from "react";
 import data from "../../data/index.json";
-import clsx from "clsx";
 
 export default function MySkills() {
   const [hover, setHover] = useState("");
@@ -23,10 +22,9 @@ export default function MySkills() {
         {data?.skills?.map((item, index) => (
           <div
             key={index}
-            className={clsx(
-              "flex px-8 pt-12 flex-col items-start gap-8 h-96 rounded-xl bg-white hover:drop-shadow-xl",
-              { "bg-[#1e6680] duration-700": hover === item.id }
-            )}
+            className={`flex px-8 pt-12 flex-col items-start gap-8 h-96 rounded-xl hover:drop-shadow-xl ${
+              hover === item.id ? "bg-sky-700 duration-500" : "bg-white"
+            }`}
             onMouseEnter={() => onMouseEnter(item.id)}
             onMouseLeave={onMouseLeave}
           >
@@ -36,18 +34,18 @@ export default function MySkills() {
               </div>
             )}
             <h3
-              className={clsx("text-sky-700", {
-                "text-[#ffff]": hover === item.id,
-              })}
+              className={
+                hover === item.id ? "text-white duration-500" : "text-sky-700"
+              }
             >
               {item.title}
             </h3>
             {hover === item.id && (
-              <ui className="p-2 text-sky-700 font-bold">
+              <ul className="p-2 text-sky-200 font-bold list-disc">
                 {item.skill?.map((skill, index) => (
                   <li key={index}>{skill}</li>
                 ))}
-              </ui>
+              </ul>
             )}
           </div>
         ))}

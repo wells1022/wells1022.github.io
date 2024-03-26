@@ -1,5 +1,4 @@
 import { useState } from "react";
-import clsx from "clsx";
 import data from "../../data/index.json";
 
 export default function MyPortfolio() {
@@ -25,10 +24,11 @@ export default function MyPortfolio() {
         .map((item, index) => (
           <div
             key={index}
-            className={clsx(
-              "flex justify-center items-center gap-10 bg-sky-100 p-10 rounded-xl",
-              { "bg-sky-800 text-white duration-700": hover === item.id }
-            )}
+            className={`flex justify-center items-center gap-10 p-10 rounded-xl ${
+              hover === item.id
+                ? "bg-sky-800 text-white duration-500"
+                : "bg-sky-100 text-black"
+            }`}
             onMouseEnter={() => onMouseEnter(item.id)}
             onMouseLeave={onMouseLeave}
           >
@@ -47,7 +47,11 @@ export default function MyPortfolio() {
               <div className="flex flex-wrap gap-5 mt-3">
                 {item.Technologies?.map((tech, index) => (
                   <div
-                    className="bg-white text-black px-2 py-1 rounded"
+                    className={`px-2 py-1 rounded ${
+                      hover === item.id
+                        ? "bg-sky-100 text-sky-700 duration-500"
+                        : "text-sky-100 bg-sky-700"
+                    }`}
                     key={index}
                   >
                     {tech}

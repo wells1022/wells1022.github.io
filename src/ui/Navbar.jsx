@@ -81,12 +81,9 @@ function Navbar() {
             }
           />
           <p
-            className={clsx(
-              "text-[#000] font-bold text-4xl font-raisley whitespace-nowrap",
-              {
-                "text-[#000]": scrollpos > 10,
-              }
-            )}
+            className={`font-bold text-4xl font-raisley whitespace-nowrap ${
+              scrollpos > 10 ? "text-sky-700" : "text-white"
+            }`}
           >
             Wells Yu
           </p>
