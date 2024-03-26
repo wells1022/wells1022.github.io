@@ -1,17 +1,6 @@
-import { useState } from "react";
 import data from "../../data/index.json";
 
 export default function MySkills() {
-  const [hover, setHover] = useState("");
-
-  const onMouseEnter = (id) => {
-    setHover(id);
-  };
-
-  const onMouseLeave = () => {
-    setHover("");
-  };
-
   return (
     <section
       className="w-full h-fit px-10 xl:px-20 py-20 flex gap-10 flex-col bg-sky-100"
@@ -22,31 +11,19 @@ export default function MySkills() {
         {data?.skills?.map((item, index) => (
           <div
             key={index}
-            className={`flex px-8 pt-12 flex-col items-start gap-8 h-96 rounded-xl hover:drop-shadow-xl ${
-              hover === item.id ? "bg-sky-700 duration-500" : "bg-white"
-            }`}
-            onMouseEnter={() => onMouseEnter(item.id)}
-            onMouseLeave={onMouseLeave}
+            className="flex px-5 pt-12 flex-col items-start gap-3 h-full rounded-xl hover:drop-shadow-2xl bg-white"
           >
-            {hover !== item.id && (
-              <div className="flex px-5 justify-center items-center gap-3.5 rounded-lg">
+            <div className="flex gap-5">
+              <div className="flex justify-center items-center gap-3.5 rounded-lg h-10 w-10">
                 <img alt="icon" src={item.src} />
               </div>
-            )}
-            <h3
-              className={
-                hover === item.id ? "text-white duration-500" : "text-sky-700"
-              }
-            >
-              {item.title}
-            </h3>
-            {hover === item.id && (
-              <ul className="p-2 text-sky-200 font-bold list-disc">
-                {item.skill?.map((skill, index) => (
-                  <li key={index}>{skill}</li>
-                ))}
-              </ul>
-            )}
+              <h3 className="text-black w-3/6">{item.title}</h3>
+            </div>
+            <ul className="px-10 pb-4 text-sky-700 font-bold list-disc">
+              {item.skill?.map((skill, index) => (
+                <li key={index}>{skill}</li>
+              ))}
+            </ul>
           </div>
         ))}
       </div>

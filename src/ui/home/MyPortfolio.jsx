@@ -24,9 +24,9 @@ export default function MyPortfolio() {
         .map((item, index) => (
           <div
             key={index}
-            className={`flex flex-col xl:flex-row justify-center items-center gap-10 p-10 rounded-xl ${
+            className={`flex flex-col xl:flex-row justify-center items-center gap-10 p-10 rounded-xl hover:drop-shadow-2xl ${
               hover === item.id
-                ? "bg-sky-800 text-white duration-500"
+                ? "bg-sky-700 text-white duration-500"
                 : "bg-sky-100 text-black"
             }`}
             onMouseEnter={() => onMouseEnter(item.id)}
