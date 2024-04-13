@@ -1,16 +1,15 @@
 import data from "../../data/index.json";
 
-export default function WorkExperience() {
+export default function Education() {
   return (
     <section
       className="w-full h-fit px-5 lg:px-20 py-20 flex gap-10 flex-col"
-      id="WorkExperience"
+      id="Education"
     >
-      <h2>Work Experience</h2>
+      <h2>Education</h2>
       <div className="px-5 lg:px-[15vw]">
-        {data?.experience
+        {data?.Education
           ?.slice()
-          .reverse()
           .map((item, index) => (
             <div className="flex" key={index}>
               <div className="flex items-start justify-center relative w-20 pr-5">
@@ -34,11 +33,11 @@ export default function WorkExperience() {
                 <div className="flex lg:flex-row flex-col lg:gap-10 justify-between">
                   <div>
                     <h3 className="pb-2">{item.title}</h3>
-                    <h4 className="bg-sky-100 px-2 py-1 rounded w-fit">{item.company}</h4>
+                    <h4 className="bg-sky-100 px-2 py-1 rounded w-fit">{item.school}</h4>
                   </div>
                   <div>
                     <img
-                      alt={item.company}
+                      alt={item.school}
                       className="h-20 w-20"
                       src={item.src}
                     />
@@ -67,25 +66,6 @@ export default function WorkExperience() {
                     </svg>
                     <h5>{item.date}</h5>
                   </div>
-                  <div className="flex gap-1">
-                    <svg
-                      className="h-5 w-5"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      strokeWidth="2"
-                      stroke="currentColor"
-                      fill="none"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    >
-                      {" "}
-                      <path stroke="none" d="M0 0h24v24H0z" />{" "}
-                      <circle cx="12" cy="12" r="9" />{" "}
-                      <polyline points="12 7 12 12 15 15" />
-                    </svg>
-                    <h5>{item.duration}</h5>
-                  </div>
                 </div>
                 <div className="flex gap-1 text-sky-700">
                   <svg
@@ -108,20 +88,6 @@ export default function WorkExperience() {
                     />
                   </svg>
                   <h5>{item.location}</h5>
-                </div>
-                <ul className="pt-5 pl-5 list-disc">
-                  {item.description.map((item, index) => (
-                    <li className="pb-2" key={index}>
-                      {item}
-                    </li>
-                  ))}
-                </ul>
-                <div className="flex flex-wrap gap-2">
-                  {item.skill.map((item, index) => (
-                    <div className="bg-sky-100 px-2 py-1 rounded" key={index}>
-                      {item}
-                    </div>
-                  ))}
                 </div>
               </div>
             </div>

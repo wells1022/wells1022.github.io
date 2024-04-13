@@ -14,7 +14,7 @@ export default function MyPortfolio() {
 
   return (
     <section
-      className="w-full h-fit px-5 xl:px-20 py-20 flex gap-10 flex-col"
+      className="w-full h-fit px-5 lg:px-20 py-20 flex gap-10 flex-col bg-sky-100"
       id="MyPortfolio"
     >
       <h2>My Portfolio</h2>
@@ -24,15 +24,15 @@ export default function MyPortfolio() {
         .map((item, index) => (
           <div
             key={index}
-            className={`flex flex-col xl:flex-row justify-center items-center gap-10 p-10 rounded-xl hover:drop-shadow-2xl ${
+            className={`flex flex-col lg:flex-row justify-center items-center gap-10 p-10 rounded-xl hover:drop-shadow-2xl ${
               hover === item.id
                 ? "bg-sky-700 text-white duration-500"
-                : "bg-sky-100 text-black"
+                : "bg-white text-black"
             }`}
             onMouseEnter={() => onMouseEnter(item.id)}
             onMouseLeave={onMouseLeave}
           >
-            <div className="xl:w-96">
+            <div className="lg:w-96">
               <img alt="Project" src={item.src} />
             </div>
             <div className="w-fit">

@@ -2,42 +2,79 @@ import data from "../../data/index.json";
 
 export default function Certifications() {
   return (
-    <section className="testimonial--section" id="Certifications">
-      <div className="portfolio--container-box">
-        <div className="portfolio--container">
-          <p className="sub--title">Clients Feedback</p>
-          <h2 className="sections--heading">Customer Feedback</h2>
-        </div>
-      </div>
-      <div className="portfolio--section--container">
-        {data?.testimonial?.map((item, index) => (
-          <div key={index} className="testimonial--section--card">
-            <div className="testimonial--section--card--review">
-              {Array.from({ length: 5 }, (reviews, index) => (
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="27"
-                  height="26"
-                  viewBox="0 0 27 26"
-                  fill="none"
-                >
-                  <path
-                    d="M12.0945 0.953177C12.5528 -0.135435 14.1138 -0.135434 14.5722 0.95318L17.2772 7.37836C17.4705 7.8373 17.9074 8.15087 18.4089 8.19059L25.4302 8.74669C26.6199 8.84091 27.1022 10.3076 26.1959 11.0746L20.8464 15.6016C20.4643 15.925 20.2973 16.4324 20.4141 16.9158L22.0484 23.6847C22.3253 24.8315 21.0625 25.7381 20.044 25.1235L14.0327 21.4961C13.6033 21.237 13.0633 21.237 12.634 21.4961L6.62265 25.1235C5.60415 25.7381 4.34127 24.8315 4.61818 23.6847L6.25256 16.9158C6.3693 16.4324 6.20243 15.925 5.82034 15.6016L0.47075 11.0746C-0.435624 10.3076 0.0467572 8.84091 1.23639 8.74669L8.25781 8.19059C8.75933 8.15087 9.19621 7.8373 9.38942 7.37836L12.0945 0.953177Z"
-                    fill="#006B6A"
-                  />
-                </svg>
-              ))}
+    <section
+      className="w-full h-fit px-5 lg:px-20 py-20 flex gap-10 flex-col"
+      id="Certifications"
+    >
+      <h2>Certifications</h2>
+      <div className="px-5 lg:px-[10vw]">
+        {data?.certifications?.slice().map((item, index) => (
+          <div className="flex" key={index}>
+            <div className="flex items-start justify-center relative w-20 pr-5">
+              <svg
+                className="absolute h-5 w-5 z-10 text-sky-700 bg-white"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                strokeWidth="3"
+                stroke="currentColor"
+                fill="none"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" />{" "}
+                <circle cx="12" cy="12" r="10" />
+              </svg>
+              <div className="h-full pt-6 w-0.5 bg-sky-700"></div>
             </div>
-            <p className="text-md">{item.description}</p>
-            <div className="testimonial--section--card--author--detail">
-              <img src={item.src} alt="Avatar" />
-              <div>
-                <p className="text-md testimonial--author--name">
-                  {item.author_name}
-                </p>
-                <p className="text-md testimonial--author--designation">
-                  {item.author_designation}
-                </p>
+            <div className="lg:w-[70vw] py-5">
+              <div className="flex flex-col">
+                <h3 className="pb-2">{item.title}</h3>
+                <div className="flex flex-col lg:flex-row lg:gap-10 gap-5 justify-between">
+                  <div>
+                    <div className="flex gap-5 lg:gap-20 text-sky-700">
+                      <div className="flex gap-1">
+                        <svg
+                          className="h-5 w-5"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          strokeWidth="2"
+                          stroke="currentColor"
+                          fill="none"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        >
+                          {" "}
+                          <path stroke="none" d="M0 0h24v24H0z" />{" "}
+                          <rect x="4" y="5" width="16" height="16" rx="2" />{" "}
+                          <line x1="16" y1="3" x2="16" y2="7" />{" "}
+                          <line x1="8" y1="3" x2="8" y2="7" />{" "}
+                          <line x1="4" y1="11" x2="20" y2="11" />{" "}
+                          <rect x="8" y="15" width="2" height="2" />
+                        </svg>
+                        <h5>{item.date}</h5>
+                      </div>
+                    </div>
+                    <div className="flex flex-wrap gap-2">
+                      {item.skill.map((item, index) => (
+                        <div
+                          className="bg-sky-100  px-2 py-1 rounded"
+                          key={index}
+                        >
+                          {item}
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                  <div>
+                    <img
+                      alt={item.title}
+                      className="lg:h-[7vw] lg:w-[8vw] h-[25vw] w-[30vw]"
+                      src={item.src}
+                    />
+                  </div>
+                </div>
               </div>
             </div>
           </div>

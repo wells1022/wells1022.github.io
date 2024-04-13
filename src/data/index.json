@@ -1,22 +1,26 @@
 {
+  "aboutMe": [
+    "As a Master of IT student at Monash University, I am deeply passionate about technology, especially in the areas of cloud computing, web development, and big data.",
+    "I am currently dedicated to enhancing my expertise in cloud computing, demonstrating my dedication to remaining at the forefront of technological innovation."
+  ],
   "contact": [
     {
-      "src": "./img/resume.png",
+      "src": "./img/contact/resume.png",
       "title": "Resume",
       "url": "https://docs.google.com/document/d/1Ud5NrTc3GHl2yON8rwz-G4XFW7Gdx1KvidMPd0P-T4I/edit?usp=sharing"
     },
     {
-      "src": "./img/linkedin.png",
+      "src": "./img/contact/linkedin.png",
       "title": "LinkedIn",
-      "url": "https://www.linkedin.com/in/cheng-han-yu-331763159/"
+      "url": "https://www.linkedin.com/in/wells-yu/"
     },
     {
-      "src": "./img/github.png",
+      "src": "./img/contact/github.png",
       "title": "GitHub",
       "url": "https://github.com/wells1022/"
     },
     {
-      "src": "./img/email.png",
+      "src": "./img/contact/email.png",
       "title": "Email",
       "url": "mailto:wells1022@gmail.com"
     }
@@ -24,7 +28,7 @@
   "experience": [
     {
       "id": "1",
-      "src": "./img/garmin-logo.png",
+      "src": "./img/work/garmin-logo.png",
       "title": "New Product Introduction Engineer",
       "company": "Garmin",
       "date": "Nov 2020 - Jun 2022",
@@ -45,33 +49,56 @@
   "skills": [
     {
       "id": "1",
-      "src": "./img/programming.png",
+      "src": "./img/skill/programming.png",
       "title": "Programming Languages",
-      "skill": ["Python", "Java", "JavaScript", "TypeScript", "C++"]
+      "skill": ["Python", "TypeScript", "JavaScript", "Java", "C++"]
     },
     {
       "id": "2",
-      "src": "./img/web.png",
+      "src": "./img/skill/web.png",
       "title": "Application Technologies",
-      "skill": ["React", "Next.js", "Node.js", "HTML", "CSS", "Android"]
+      "skill": [
+        "React",
+        "Next.js",
+        "Node.js",
+        "Tailwind",
+        "HTML",
+        "CSS",
+        "Android"
+      ]
     },
     {
       "id": "3",
-      "src": "./img/cloud.png",
+      "src": "./img/skill/cloud.png",
       "title": "Cloud",
-      "skill": ["terraform", "AWS"]
+      "skill": ["Terraform", "AWS"]
     },
     {
       "id": "4",
-      "src": "./img/database.png",
+      "src": "./img/skill/database.png",
       "title": "Database",
-      "skill": ["MySQL", "NoSQL"]
+      "skill": ["MySQL", "PostgreSQL", "NoSQL"]
+    }
+  ],
+  "certifications": [
+    {
+      "id": "1",
+      "src": "./img/certification/aws-certified-solutions-architect-associate.png",
+      "title": "AWS Certified Solutions Architect - Associate",
+      "date": "APR 2024",
+      "issue": "Amazon Web Services Training and Certification",
+      "url": "https://www.credly.com/badges/29da2bc4-474d-4735-b28e-45a1bc8d6058/public_url/",
+      "skill": [
+        "Amazon Web Services",
+        "Cloud Architecture",
+        "Cloud Infrastructure"
+      ]
     }
   ],
   "portfolio": [
     {
       "id": "1",
-      "src": "./img/all-on-4.png",
+      "src": "./img/portfolio/all-on-4.png",
       "title": "Automatic optimization analysis of prostheses for All-on-four treatments",
       "description": [
         "Developed an automated framework for optimizing the placement of implants of the all-on-4 treatment based on the biomechanical analysis and optimization search algorithm.",
@@ -88,7 +115,7 @@
     },
     {
       "id": "2",
-      "src": "./img/pet-planning.png",
+      "src": "./img/portfolio/pet-planning.png",
       "title": "Pet Planning: A pet care and management application",
       "description": [
         "Developed an Android application to help pet owners schedule and manage events for their pets such as feeding, grooming, walking, or medical appointments.",
@@ -98,7 +125,7 @@
     },
     {
       "id": "3",
-      "src": "./img/image-tagging.png",
+      "src": "./img/portfolio/image-tagging.png",
       "title": "Image Taging: Serverless image storage system with tagging",
       "description": [
         "Developed a cloud-based online system that enables users to store and retrieve images using automatically generated tags.",
@@ -108,7 +135,7 @@
     },
     {
       "id": "4",
-      "src": "./img/asset-steward.png",
+      "src": "./img/portfolio/asset-steward.png",
       "title": "Asset Steward: A digital asset management system",
       "description": [
         "Developed a digital asset management system that enables users to manage and track assets, including their location, status, and maintenance history.",
@@ -117,14 +144,30 @@
       "Technologies": ["React", "Node.js", "HTML", "CSS"]
     }
   ],
-  "testimonial": [
+  "Education": [
     {
       "id": "1",
-      "count": "5",
-      "src": "./img/avatar-image.png",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
-      "author_name": "Dianne Russel",
-      "author_designation": "Starbucks"
+      "src": "./img/education/monash.png",
+      "title": "Master of Information Technology",
+      "school": "Monash University",
+      "date": "2022 - 2024",
+      "location": "Melbourne, Australia"
+    },
+    {
+      "id": "2",
+      "src": "./img/education/ncku.png",
+      "title": "Master of Science in Mechanical Engineering",
+      "school": "National Cheng Kung University",
+      "date": "2018 - 2020",
+      "location": "Tainan, Taiwan"
+    },
+    {
+      "id": "3",
+      "src": "./img/education/ccu.png",
+      "title": "Bachelor of Science in Mechanical Engineering",
+      "school": "National Chung Cheng University",
+      "date": "2014 - 2018",
+      "location": "Chiayi, Taiwan"
     }
   ]
 }

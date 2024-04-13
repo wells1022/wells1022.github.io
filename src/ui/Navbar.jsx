@@ -51,15 +51,16 @@ function Navbar() {
     { title: "About", nav: "AboutMe" },
     { title: "Experience", nav: "WorkExperience" },
     { title: "Skills", nav: "MySkills" },
+    { title: "Certifications", nav: "Certifications" },
     { title: "Portfolio", nav: "MyPortfolio" },
-    // { title: "Certifications", nav: "Certifications" },
+    { title: "Education", nav: "Education"}
     // { title: "Contact", nav: "Contact" },
   ];
 
   return (
     <nav
       className={clsx(
-        "flex justify-between items-center px-20 py-2 bg-transparent fixed top-0 left-0 right-0 h-16 z-50",
+        "flex justify-between items-center px-10 lg:px-15 py-2 bg-transparent fixed top-0 left-0 right-0 h-16 z-50",
         { "bg-white duration-500": scrollpos > 10 }
       )}
     >
@@ -124,7 +125,7 @@ function Navbar() {
       <ul
         className={clsx(
           "flex text-xl font-bold text-stone-950 bg-[#f5fcff] whitespace-nowrap",
-          "absolute flex-col gap-8 px-20 py-5 top-16 right-0 w-screen justify-end",
+          "absolute flex-col gap-8 py-5 px-20 md:px-0 top-16 right-0 w-screen justify-end",
           "lg:flex lg:flex-row lg:relative lg:bg-transparent lg:text-stone-50 lg:gap-10 lg:item-center lg:top-0",
           { "lg:text-stone-950": scrollpos > 10 },
           { hidden: !navActive }
