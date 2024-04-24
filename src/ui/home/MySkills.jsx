@@ -11,7 +11,7 @@ export default function MySkills() {
         {data?.skills?.map((item, index) => (
           <div
             key={index}
-            className="flex px-5 pt-12 flex-col items-start gap-3 h-full rounded-xl hover:drop-shadow-2xl bg-white"
+            className="flex px-10 pt-12 flex-col items-start gap-3 h-full rounded-xl hover:drop-shadow-2xl bg-white"
           >
             <div className="flex gap-5">
               <div className="flex justify-center items-center gap-3.5 rounded-lg h-10 w-10">

@@ -55,23 +55,21 @@
     },
     {
       "id": "2",
-      "src": "./img/skill/web.png",
-      "title": "Application Technologies",
+      "src": "./img/skill/devops.png",
+      "title": "DevOps",
       "skill": [
-        "React",
-        "Next.js",
-        "Node.js",
-        "Tailwind",
-        "HTML",
-        "CSS",
-        "Android"
+        "Docker",
+        "Kubernetes",
+        "AWS Architecture",
+        "Terraform",
+        "Ansible"
       ]
     },
     {
       "id": "3",
-      "src": "./img/skill/cloud.png",
-      "title": "Cloud",
-      "skill": ["Terraform", "AWS"]
+      "src": "./img/skill/web.png",
+      "title": "Application Technologies",
+      "skill": ["React", "Next.js", "Node.js", "Tailwind", "Android"]
     },
     {
       "id": "4",
