@@ -12,7 +12,7 @@ export default function AboutMe() {
       <div className="gap-10 lg:w-[30vw]">
         <h2 className="pb-10">About Me</h2>
         {data?.aboutMe?.map((item, index) => (
-          <p className="py-2" key={index}>
+          <p className="py-2 text-justify" key={index}>
             {item}
           </p>
         ))}

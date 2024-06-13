@@ -69,7 +69,7 @@
       "id": "3",
       "src": "./img/skill/web.png",
       "title": "Application Technologies",
-      "skill": ["React", "Next.js", "Node.js", "Tailwind", "Android"]
+      "skill": ["React", "Next.js", "Node.js", "GraphQL", "Android"]
     },
     {
       "id": "4",
@@ -140,6 +140,16 @@
         "The system is built on a web-based platform using React, Node.js."
       ],
       "Technologies": ["React", "Node.js", "HTML", "CSS"]
+    },
+    {
+      "id": "5",
+      "src": "./img/portfolio/greener-path.png",
+      "title": "Greener Path: A website dedicated to educating students about the environment",
+      "description": [
+        "Developed a data-driven website to educate students about the importance of the environment.",
+        "The website is hosted on Vercel with a Postgres database and connects the storage to S3 with an API gateway."
+      ],
+      "Technologies": ["Next.js", "Terraform", "TypeScript", "PostgreSQL"]
     }
   ],
   "Education": [
