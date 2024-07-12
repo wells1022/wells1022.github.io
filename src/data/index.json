@@ -1,7 +1,6 @@
 {
   "aboutMe": [
-    "As a Full Stack Developer and AWS Certified Solutions Architect with a Master’s of Information Technology from Monash University, I specialize in designing and implementing scalable web applications. I am skilled in Python, TypeScript, JavaScript, and Java, and have extensive experience with AWS, Docker, Kubernetes, and Terraform.",
-    "I am enthusiastic about utilizing my technical expertise and innovative mindset to pursue opportunities as a DevOps Engineer. Committed to continuous learning and excellence, I am eager to contribute to dynamic projects and drive technological advancements."
+    "As a Software Engineer with a Master’s in Information Technology from Monash University, I specialize in designing and implementing scalable web applications. I am skilled in Python, TypeScript, JavaScript, and Java and have extensive experience with AWS, Docker, Kubernetes, and Terraform. I am enthusiastic about utilizing my technical expertise and innovative mindset to contribute to dynamic projects and drive technological advancements."
   ],
   "contact": [
     {
@@ -31,7 +30,8 @@
       "src": "./img/work/garmin-logo.png",
       "title": "New Product Introduction Engineer",
       "company": "Garmin",
-      "date": "Nov 2020 - Jun 2022",
+      "from": "Nov 2020",
+      "to": "Jun 2022",
       "duration": "1 yr 8 mos",
       "location": "Taoyuan, Taiwan",
       "description": [
@@ -44,6 +44,20 @@
         "Process Improvement",
         "pfmea"
       ]
+    },
+    {
+      "id": "2",
+      "src": "./img/work/osvi-logo.png",
+      "title": "Full Stack Developer",
+      "company": "OrthoSport Victoria Institute",
+      "from": "Jul 2024",
+      "to": "Present",
+      "duration": "Present",
+      "location": "Melbourne, Australia",
+      "description": [
+        "Develop a system for a clinic to manage pre-visit forms and generate summary and surgeon reports."
+      ],
+      "skill": ["Next.js", "GraphQL", "Terraform"]
     }
   ],
   "skills": [

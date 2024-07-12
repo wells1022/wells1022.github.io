@@ -7,7 +7,7 @@ export default function Education() {
       id="Education"
     >
       <h2>Education</h2>
-      <div className="px-5 lg:px-[15vw]">
+      <div className="px-5 lg:px-[10vw] xl:px-[25vw]">
         {data?.Education
           ?.slice()
           .map((item, index) => (

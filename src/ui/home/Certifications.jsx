@@ -7,7 +7,7 @@ export default function Certifications() {
       id="Certifications"
     >
       <h2>Certifications</h2>
-      <div className="px-5 lg:px-[10vw]">
+      <div className="px-5 lg:px-[10vw] xl:px-[25vw]">
         {data?.certifications?.slice().map((item, index) => (
           <div className="flex" key={index}>
             <div className="flex items-start justify-center relative w-20 pr-5">

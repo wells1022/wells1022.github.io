@@ -14,7 +14,7 @@ export default function MyPortfolio() {
 
   return (
     <section
-      className="w-full h-fit px-5 lg:px-20 py-20 flex gap-10 flex-col bg-sky-100"
+      className="w-full h-fit px-5 lg:px-20 py-20 xl:px-[15vw] flex gap-10 flex-col bg-sky-100"
       id="MyPortfolio"
     >
       <h2>My Portfolio</h2>
@@ -24,7 +24,7 @@ export default function MyPortfolio() {
         .map((item, index) => (
           <div
             key={index}
-            className={`flex flex-col lg:flex-row justify-center items-center gap-10 p-10 rounded-xl hover:drop-shadow-2xl ${
+            className={`flex flex-col lg:flex-row justify-start items-center gap-10 p-10 lg:px-[10vw] rounded-xl hover:drop-shadow-2xl ${
               hover === item.id
                 ? "bg-sky-700 text-white duration-500"
                 : "bg-white text-black"

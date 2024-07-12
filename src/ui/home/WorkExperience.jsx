@@ -1,13 +1,37 @@
 import data from "../../data/index.json";
 
 export default function WorkExperience() {
+  // Helper function to convert "MMM YYYY" string to Date object
+  const parseDate = (dateString) => {
+    const [month, year] = dateString.split(" ");
+    return new Date(`${year}-${month}-01`);
+  };
+
+  // Helper function to calculate the duration between two dates
+  const calculateDuration = (fromDate, toDate) => {
+    const startDate = parseDate(fromDate);
+    const endDate = toDate === "Present" ? new Date() : parseDate(toDate);
+
+    let years = endDate.getFullYear() - startDate.getFullYear();
+    let months = endDate.getMonth() - startDate.getMonth();
+
+    if (months < 0) {
+      years--;
+      months += 12;
+    }
+
+    return `${
+      years > 0 ? `${years} yr${years > 1 ? "s" : ""} ` : ""
+    }${months} mo${months > 1 ? "s" : ""}`;
+  };
+
   return (
     <section
       className="w-full h-fit px-5 lg:px-20 py-20 flex gap-10 flex-col"
       id="WorkExperience"
     >
       <h2>Work Experience</h2>
-      <div className="px-5 lg:px-[15vw]">
+      <div className="px-5 lg:px-[10vw] xl:px-[25vw]">
         {data?.experience
           ?.slice()
           .reverse()
@@ -34,7 +58,9 @@ export default function WorkExperience() {
                 <div className="flex lg:flex-row flex-col lg:gap-10 justify-between">
                   <div>
                     <h3 className="pb-2">{item.title}</h3>
-                    <h4 className="bg-sky-100 px-2 py-1 rounded w-fit">{item.company}</h4>
+                    <h4 className="bg-sky-100 px-2 py-1 rounded w-fit">
+                      {item.company}
+                    </h4>
                   </div>
                   <div>
                     <img
@@ -65,7 +91,9 @@ export default function WorkExperience() {
                       <line x1="4" y1="11" x2="20" y2="11" />{" "}
                       <rect x="8" y="15" width="2" height="2" />
                     </svg>
-                    <h5>{item.date}</h5>
+                    <h5>
+                      {item.from} - {item.to}
+                    </h5>
                   </div>
                   <div className="flex gap-1">
                     <svg
@@ -84,7 +112,8 @@ export default function WorkExperience() {
                       <circle cx="12" cy="12" r="9" />{" "}
                       <polyline points="12 7 12 12 15 15" />
                     </svg>
-                    <h5>{item.duration}</h5>
+                    {/* <h5>{item.duration}</h5> */}
+                    <h5>{calculateDuration(item.from, item.to)}</h5>
                   </div>
                 </div>
                 <div className="flex gap-1 text-sky-700">
