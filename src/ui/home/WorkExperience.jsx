@@ -13,7 +13,7 @@ export default function WorkExperience() {
     const endDate = toDate === "Present" ? new Date() : parseDate(toDate);
 
     let years = endDate.getFullYear() - startDate.getFullYear();
-    let months = endDate.getMonth() - startDate.getMonth();
+    let months = endDate.getMonth() - startDate.getMonth() + 1;
 
     if (months < 0) {
       years--;

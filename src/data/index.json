@@ -55,7 +55,7 @@
       "duration": "Present",
       "location": "Melbourne, Australia",
       "description": [
-        "Develop a system for a clinic to manage pre-visit forms and generate summary and surgeon reports."
+        "Develop a system for the clinic to manage pre-visit forms, and generate summary and surgeon reports."
       ],
       "skill": ["Next.js", "GraphQL", "Terraform"]
     }
