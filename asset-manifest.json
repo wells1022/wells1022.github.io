@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/static/css/main.787ae0af.css",
-    "main.js": "/static/js/main.1f0b5b31.js",
+    "main.js": "/static/js/main.012e974c.js",
     "static/js/453.b4221178.chunk.js": "/static/js/453.b4221178.chunk.js",
     "static/media/Raisley.otf": "/static/media/Raisley.e0a903e64dc8747d3448.otf",
     "index.html": "/index.html",
     "main.787ae0af.css.map": "/static/css/main.787ae0af.css.map",
-    "main.1f0b5b31.js.map": "/static/js/main.1f0b5b31.js.map",
+    "main.012e974c.js.map": "/static/js/main.012e974c.js.map",
     "453.b4221178.chunk.js.map": "/static/js/453.b4221178.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.787ae0af.css",
-    "static/js/main.1f0b5b31.js"
+    "static/js/main.012e974c.js"
   ]
 }
