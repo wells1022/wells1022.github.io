@@ -1,6 +1,6 @@
 {
   "aboutMe": [
-    "As a Software Engineer with a Master’s in Information Technology from Monash University, I specialize in designing and implementing scalable web applications. I am skilled in Python, TypeScript, JavaScript, and Java and have extensive experience with AWS, Docker, Kubernetes, and Terraform. I am enthusiastic about utilizing my technical expertise and innovative mindset to contribute to dynamic projects and drive technological advancements."
+    "Proactive Full-Stack Developer with expertise in designing and deploying scalable web applications and cloud infrastructure using AWS, Terraform, Next.js, and GraphQL. Adept at collaborating with clients to deliver tailored solutions, from technical consultation to project deployment, while ensuring alignment with business goals. Skilled in managing end-to-end projects, including budget oversight, system architecture, and UI/UX improvements based on user feedback. Driven by a growth mindset, I actively seek challenges that foster technical and personal development, always striving for enhanced efficiency and innovation in project execution."
   ],
   "contact": [
     {
@@ -55,9 +55,19 @@
       "duration": "Present",
       "location": "Melbourne, Australia",
       "description": [
-        "Develop a system for the clinic to manage pre-visit forms, and generate summary and surgeon reports."
+        "Consulted with clients to identify project requirements, leading to successful project proposals and long-term contracts.",
+        "Developed a web application for managing clinic pre-visit forms and streamlining physiotherapists' workflows, resulting in a measurable improvement in operational efficiency.",
+        "Designed and deployed AWS-based infrastructure using Terraform, integrating serverless architecture and GraphQL API management for scalability.",
+        "Led the end-to-end delivery of projects, overseeing timelines, budgets, and team coordination, ensuring alignment with client expectations.",
+        "Implemented UI/UX improvements based on continuous client feedback to enhance the overall user experience."
       ],
-      "skill": ["Next.js", "GraphQL", "Terraform"]
+      "skill": [
+        "Next.js",
+        "GraphQL",
+        "Terraform",
+        "AWS Serverless",
+        "TypeScript"
+      ]
     }
   ],
   "skills": [
@@ -73,10 +83,9 @@
       "title": "DevOps",
       "skill": [
         "Docker",
-        "Kubernetes",
         "AWS Architecture",
         "Terraform",
-        "Ansible"
+        "Kubernetes"
       ]
     },
     {

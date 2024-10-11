@@ -31,7 +31,7 @@ export default function WorkExperience() {
       id="WorkExperience"
     >
       <h2>Work Experience</h2>
-      <div className="px-5 lg:px-[10vw] xl:px-[25vw]">
+      <div className="px-5 lg:px-[10vw] xl:px-[20vw]">
         {data?.experience
           ?.slice()
           .reverse()
